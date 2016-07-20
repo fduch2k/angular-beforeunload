@@ -45,7 +45,6 @@ app.provider('BeforeUnload', function() {
           if (confirm(leavingPageText + "\n\n"+leavingPageText2)) {
             // OK
             $window.onbeforeunload = null;
-            callback();
           } else {
             // Cancel
             event.preventDefault();
