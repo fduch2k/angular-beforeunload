@@ -37,7 +37,7 @@ app.provider('BeforeUnload', function() {
         }
         return function(event, confirmCallback, cancelCallback) {
           if (_turnOffConfirm) {
-            confirmCallback();
+            //confirmCallback();
             _debugCallback();
             $window.onbeforeunload = null;
             return;
@@ -48,7 +48,7 @@ app.provider('BeforeUnload', function() {
           } else {
             // Cancel
             event.preventDefault();
-            cancelCallback();
+            //cancelCallback();
           }
         }; // return func
       } // end init
