@@ -42,7 +42,7 @@ app.provider('BeforeUnload', function() {
             $window.onbeforeunload = null;
             return;
           }
-          if (confirm(leavingPageText + "\n\n"+leavingPageText2)) {
+          if (confirm(_leavingPageText + "\n\n" + _leavingPageText2)) {
             // OK
             $window.onbeforeunload = null;
           } else {
