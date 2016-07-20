@@ -59,4 +59,4 @@ app.provider('BeforeUnload', function() {
 });
 
 
-}(angular.module('angular-beforeunload')));
+}(angular.module('angular-beforeunload', [])));
