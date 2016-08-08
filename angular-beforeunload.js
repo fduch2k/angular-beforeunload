@@ -51,7 +51,10 @@ app.provider('BeforeUnload', function() {
             //cancelCallback();
           }
         }; // return func
-      } // end init
+      }, // end init
+      destroy: function () {
+        $window.onbeforeunload = null;
+      }
     } // end return
 
   }];
